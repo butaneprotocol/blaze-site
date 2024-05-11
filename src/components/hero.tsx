@@ -12,7 +12,7 @@ export default function Hero() {
     loop={true}
     style={
       {
-        width: "60%"
+        width: "80%"
       }
     }
   />
