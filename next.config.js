@@ -23,6 +23,7 @@ const withNextra = nextra({
 
 module.exports = {
   ...withNextra({
+    basePath: "/blaze-site",
     output: "export",
     images: { unoptimized: true },
   }),
