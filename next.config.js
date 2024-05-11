@@ -26,5 +26,6 @@ module.exports = {
     basePath: "/blaze-site",
     output: "export",
     images: { unoptimized: true },
+    reactStrictMode: true,
   }),
 };
