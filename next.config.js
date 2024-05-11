@@ -22,15 +22,6 @@ const withNextra = nextra({
 });
 
 module.exports = {
-  async redirects() {
-    return [
-      {
-        source: "/example--hello-world",
-        destination: "/example--hello-world/basics",
-        permanent: true,
-      },
-    ];
-  },
   ...withNextra({
     output: "export",
     images: { unoptimized: true },
