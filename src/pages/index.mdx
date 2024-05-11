@@ -4,21 +4,20 @@ title: A modern smart contract platform for Cardano
 
 import Image from 'next/image';
 import { LightDarkIframe } from '../components/light-dark-iframe';
-import theCodeOfLife from '../../public/the-code-of-life.webp';
-import theFirstContact from '../../public/the-first-contact.webp';
+import { Hero } from "../components/hero-wrapper"
 
 export const palette = {
   dark: {
-    border: "#604185",
+    border: "#000000",
     borderText: "#f2f2f2",
-    bullet: "#f0a5e7",
-    link: "#f0a5e7",
+    bullet: "#0069bf",
+    link: "#a5bef0",
     separator: "#292929",
     text: "#f2f2f2",
     window: "#1E2127",
   },
   light: {
-    border: "#604185",
+    border: "#000000",
     borderText: "#f2f2f2",
     bullet: "#f0a5e7",
     link: "#f0a5e7",
@@ -356,8 +355,7 @@ export function icon(name, color) {
     }
   }
   section#roadmap {
-    background-color: #604185;
-    background-image: url('${theFirstContact.src}');
+    background-color: #000;
     background-repeat: no-repeat;
     background-size: 100%;
     color: var(--color-border-text);
@@ -539,7 +537,6 @@ export const aikenErrorExample = `<strong>Error:</strong> <span class="hljs-erro
 
 <span class="hljs-title">help</span>: <i>Did you mean <span class="hljs-title function_">'extra_signatories'</span>?</i>`;
 
-
 export const aikenTestResultExample = `<span class="hljs-keyword"><strong>Compiling</strong></span> aiken-lang/stdlib 0.0.0
   <span class="fadein1"><span class="hljs-keyword"><strong>Testing</strong></span> ...</span>
 
@@ -557,10 +554,10 @@ export const aikenTestResultExample = `<span class="hljs-keyword"><strong>Compil
 <link rel="stylesheet" href="/css/highlightjs-theme.css"/>
 
 <header id="landing">
-  <Image src={theCodeOfLife} alt="Credit: © Hurcastock! - https://www.hurcastock.com" loading="eager" />
-  <h1>A modern smart contract platform for Cardano</h1>
+  <Hero/>
+  <h1 style={{"margin-top": "20px"}}>A practical developer SDK for Cardano</h1>
   <nav>
-    <a class="playground" target="_blank" href="https://play.aiken-lang.org">Playground</a><a href="/installation-instructions">❯_ Get started</a>
+    <a href="/installation-instructions">❯_ Get started</a>
   </nav>
 </header>
 

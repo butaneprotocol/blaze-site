@@ -1,5 +1,6 @@
 import { DocsThemeConfig, useConfig } from "nextra-theme-docs";
 import { useTheme } from "next-themes";
+import blazeLogo from './public/blaze_white.webp';
 
 const config: DocsThemeConfig = {
   // Ideally, we'd simply use a <picture> + <source media="(prefers-color-scheme: ...)"/>,
@@ -13,9 +14,7 @@ const config: DocsThemeConfig = {
         <img
           style={{ height: "var(--nextra-navbar-height)" }}
           src={
-            resolvedTheme === "light"
-              ? "https://raw.githubusercontent.com/aiken-lang/branding/main/assets/logo-dark.png"
-              : "https://raw.githubusercontent.com/aiken-lang/branding/main/assets/logo-light.png"
+            blazeLogo.src
           }
         />
       </>
@@ -67,7 +66,7 @@ const config: DocsThemeConfig = {
     const { title } = useConfig();
     const description = "A modern smart contract platform for Cardano";
     return {
-      titleTemplate: "Aiken | %s",
+      titleTemplate: "Blaze | %s",
       description,
       canonical: "https://aiken-lang.org/",
       openGraph: {
@@ -78,14 +77,14 @@ const config: DocsThemeConfig = {
             url: "https://aiken-lang.org/open-graph.png",
             width: 800,
             height: 418,
-            alt: "Aiken - A modern smart contract platform for Cardano",
+            alt: "Blaze - A modern smart contract platform for Cardano",
             type: "image/png",
           },
         ],
       },
-      siteName: "Aiken",
+      siteName: "Blaze",
       twitter: {
-        handle: "@aiken_eng",
+        handle: "@butaneprotcool",
         site: "https://aiken-lang.org",
         cardType: "summary_large_image",
       },
@@ -95,8 +94,12 @@ const config: DocsThemeConfig = {
     component: (<>
       <footer>
         <aside>
-          <img src="/typo.webp" />
-          <p>The modern Cardano platform</p>
+          <img
+            src={
+              blazeLogo.src
+            }
+          />
+          <p>The practical Cardano SDK</p>
         </aside>
         <nav>
           <h2><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg> Quick Links</h2>
@@ -110,21 +113,19 @@ const config: DocsThemeConfig = {
           <h2><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>Community</h2>
           <ul>
             <li><a href="https://discord.gg/Vc3x8N9nz2">Discord</a></li>
-            <li><a href="https://twitter.com/aiken_eng">Twitter</a></li>
-            <li><a href="https://github.com/aiken-lang/awesome-aiken#readme">Awesome list</a></li>
+            <li><a href="https://twitter.com/butaneprotocol">Twitter</a></li>
           </ul>
         </nav>
         <nav>
-          <h2><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>Partners</h2>
+          <h2><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>Brought to you by</h2>
           <ul>
-            <li><a href="https://cardanofoundation.org">Cardano Foundation</a></li>
-            <li><a href="https://txpipe.io">TxPipe</a></li>
+            <li><a href="https://butane.dev">Butane</a></li>
           </ul>
         </nav>
       </footer>
       <style jsx>{`
         footer {
-          background: #604185;
+          background: #000000;
           color: #FFFFFF;
           display: flex;
           justify-content: space-between;

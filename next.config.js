@@ -14,18 +14,6 @@ const withNextra = nextra({
           ...options,
           langs: [
             ...BUNDLED_LANGUAGES,
-            {
-              id: "aiken",
-              scopeName: "source.aiken",
-              grammar: require("./aiken.tmLanguage.json"),
-              aliases: ["ak", "aiken"],
-            },
-            {
-              id: "uplc",
-              scopeName: "source.uplc",
-              grammar: require("./uplc.tmLanguage.json"),
-              aliases: ["uplc"],
-            },
           ],
         });
       },

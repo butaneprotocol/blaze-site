@@ -1,6 +1,6 @@
 {
   "index": {
-    "title": "Aiken",
+    "title": "Blaze",
     "type": "page",
     "display": "hidden",
     "theme": {
@@ -11,16 +11,6 @@
     "title": "Documentation",
     "type": "page",
     "href": "/installation-instructions"
-  },
-  "stdlib": {
-    "title": "Standard library",
-    "type": "page",
-    "href": "https://aiken-lang.github.io/stdlib/"
-  },
-  "playground": {
-    "title": "Playground",
-    "type": "page",
-    "href": "https://play.aiken-lang.org"
   },
   "about": {
     "title": "About",
