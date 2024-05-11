@@ -12,7 +12,8 @@ export default function Hero() {
     loop={true}
     style={
       {
-        width: "80%"
+        width: "auto",
+        maxHeight: "80vh",
       }
     }
   />
